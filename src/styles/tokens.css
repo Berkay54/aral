@@ -1,0 +1,33 @@
+:root {
+  --color-plaster: #eeeae2;
+  --color-paper: #f7f4ee;
+  --color-ink: #262820;
+  --color-secondary: #5c5c50;
+  --color-stone: #b59b72;
+  --color-rule: #bab5aa;
+  --color-focus: #526044;
+  --font-display: 'Bodoni Moda Variable', Georgia, serif;
+  --font-body: 'Manrope Variable', Arial, sans-serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-40: 160px;
+  --page-margin: clamp(24px, 2.2vw, 48px);
+  --header-height: 72px;
+  --duration-feedback: 180ms;
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
+}
+
+@media (max-width: 767px) {
+  :root { --page-margin: 20px; --header-height: 64px; }
+}
+@media (max-width: 359px) {
+  :root { --page-margin: 16px; }
+}

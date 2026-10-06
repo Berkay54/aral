@@ -1,0 +1,76 @@
+﻿{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T17:29:44.6117948+03:00",
+  "title": "Design System: ARAL",
+  "extensions": {
+    "colorMeta": {
+      "plaster": { "role": "neutral", "displayName": "Warm Plaster" },
+      "paper": { "role": "neutral", "displayName": "Warm Paper" },
+      "ink": { "role": "primary", "displayName": "Olive Ink" },
+      "secondary": { "role": "neutral", "displayName": "Secondary Ink" },
+      "stone": { "role": "neutral", "displayName": "Reserved Stone", "purpose": "Declared source palette token; no visible Phase 1 component accent." },
+      "rule": { "role": "neutral", "displayName": "Structural Rule" },
+      "focus": { "role": "primary", "displayName": "Olive Focus" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Monumental ARAL", "purpose": "Decorative hero masthead; tablet/mobile and reduced-motion ramps documented in DESIGN.md." },
+      "compact-brand": { "displayName": "Compact ARAL", "purpose": "Accessible header identity; same opsz 96 as masthead." },
+      "title": { "displayName": "Project Title", "purpose": "Avlu Evi title; mobile 30px." },
+      "body": { "displayName": "Global Body", "purpose": "Global text default; no long-form surface shipped." },
+      "label": { "displayName": "Navigation and Action", "purpose": "Normal-case controls and mobile detail caption." },
+      "caption": { "displayName": "Concept and Detail", "purpose": "Intentional 13px concept status and desktop/tablet detail caption." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "duration-feedback", "value": "180ms", "purpose": "Declared CSS token; current hover and menu changes are immediate." },
+      { "name": "ease-out", "value": "cubic-bezier(.23, 1, .32, 1)", "purpose": "Declared CSS token; not applied to the linear hero scrub." },
+      { "name": "hero-scroll", "value": "175svh scene / 100svh sticky stage / 0.75 viewport travel", "purpose": "Desktop >=1024px with no-preference only; native linear progress, no GSAP pin." },
+      { "name": "main-depth", "value": "scale 1.06 to 1.00", "purpose": "Main image crop expansion with rectangular inset mask." },
+      { "name": "detail-depth", "value": "scale 1.09 to 1.04; y 20px to -16px", "purpose": "Restrained independent material-plane depth." }
+    ],
+    "breakpoints": [
+      { "name": "narrow-mobile", "value": "359px max-width" },
+      { "name": "mobile", "value": "767px max-width" },
+      { "name": "tablet", "value": "768px to 1023px" },
+      { "name": "desktop", "value": "1024px min-width" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Explore Action",
+      "kind": "button",
+      "refersTo": "explore-action",
+      "description": "Phase-local scene/detail exploration; immediate keyboard navigation.",
+      "html": "<button class=\"aral-explore\" type=\"button\"><span>Mekânı keşfet</span></button>",
+      "css": ".aral-explore{display:inline-flex;align-items:center;min-height:48px;padding:0;border:0;background:none;color:var(--color-ink,#262820);font-family:var(--font-body,'Manrope Variable',Arial,sans-serif);font-size:14px;line-height:1.5;cursor:pointer}.aral-explore span{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}.aral-explore:focus-visible{outline:2px solid var(--color-focus,#526044);outline-offset:5px}@media(hover:hover) and (pointer:fine){.aral-explore:hover span{text-underline-offset:8px}}@media(max-width:1023px){.aral-explore{min-height:44px}}"
+    },
+    {
+      "name": "Phase 1 Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Working phase-local navigation; mobile disclosure behavior belongs to Hero.tsx.",
+      "html": "<nav class=\"aral-nav\" aria-label=\"Ana navigasyon\"><a href=\"#hero\">Avlu Evi</a><button type=\"button\">Malzeme ve ışık</button></nav>",
+      "css": ".aral-nav{display:flex;align-items:center;gap:clamp(24px,3vw,56px);color:var(--color-ink,#262820);font-family:var(--font-body,'Manrope Variable',Arial,sans-serif)}.aral-nav a,.aral-nav button{display:inline-flex;align-items:center;min-height:48px;padding:0;border:0;background:none;color:inherit;font-family:inherit;font-size:14px;line-height:1.5;text-decoration:none;cursor:pointer}.aral-nav a:focus-visible,.aral-nav button:focus-visible{outline:2px solid var(--color-focus,#526044);outline-offset:5px;background:var(--color-plaster,#eeeae2)}@media(hover:hover) and (pointer:fine){.aral-nav a:hover,.aral-nav button:hover{text-decoration:underline;text-underline-offset:5px}}"
+    },
+    {
+      "name": "Project Caption",
+      "kind": "custom",
+      "refersTo": "project-caption",
+      "description": "Permanent project identity and explicit concept status.",
+      "html": "<div class=\"aral-caption\"><h1>Avlu Evi</h1><p>Konsept proje</p></div>",
+      "css": ".aral-caption{display:flex;align-items:center;gap:24px;min-height:76px;border-bottom:1px solid var(--color-rule,#bab5aa);color:var(--color-ink,#262820);font-family:var(--font-body,'Manrope Variable',Arial,sans-serif)}.aral-caption h1{margin:0;font-size:clamp(28px,2.6vw,44px);font-weight:400;line-height:1.12;letter-spacing:-.025em}.aral-caption p{margin:0;border-left:1px solid var(--color-rule,#bab5aa);padding-left:24px;font-size:13px;line-height:1.5;color:var(--color-secondary,#5c5c50)}@media(max-width:767px){.aral-caption{gap:16px}.aral-caption h1{font-size:30px}.aral-caption p{padding-left:16px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Mekânın Sınırında",
+    "overview": "The approved Direction D world combines monumental editorial typography, warm stone, timber, olive landscape and controlled whole/detail image relationships. Phase 1 ships only the responsive hero and desktop transformation. Later homepage surfaces remain separately authorized future scope. Real ARAL-over-photo layering supplies depth; no separate foreground cutout ships.",
+    "keyCharacteristics": ["Architecture and image scale lead", "Warm mineral surfaces and editorial contrast", "Native scroll and deliberate mobile recomposition", "One purposeful hero motion sequence"],
+    "rules": [
+      { "name": "The Warm Continuity Rule", "body": "Keep future reading and contact surfaces in the same warm world; photography carries shifts in light and density.", "section": "colors" },
+      { "name": "The One Identity Rule", "body": "Large and compact ARAL share the same local font family and opsz 96.", "section": "typography" }
+    ],
+    "dos": ["Do preserve coherent warm whole/detail imagery", "Do keep concept captions visible", "Do preserve native scroll, keyboard access and static reduced motion", "Do distinguish shipped primitives from future surfaces"],
+    "donts": ["Don't reintroduce the obsolete foreground cutout", "Don't repeat masked headings throughout the site", "Don't add generic feature grids or universal reveals", "Don't invent verified practice facts", "Don't implement later phases without authorization"]
+  }
+}
+

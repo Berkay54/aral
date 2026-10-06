@@ -1,0 +1,92 @@
+{
+  "title": "ARAL — Mimarlık portföyü",
+  "question": "A/B/C referansları ve yeni Direction D. Tümü statik tasarım önerileridir; gerçek site henüz kodlanmayacak.",
+  "options": [
+    {
+      "id": "direction-d",
+      "label": "D — Mekânın Sınırında",
+      "kicker": "YENİ YÖN",
+      "lineage": "Editorial masthead + mekânsal eşik",
+      "thesis": "Marka, ana fotoğraf ve dikey detay tek mekânsal kompozisyon oluşturur.",
+      "palette": [
+        "#EEEAE2",
+        "#262820",
+        "#B59B72"
+      ],
+      "materials": [
+        "Sıcak doğal ışık",
+        "Taş / ahşap / zeytin",
+        "Aktif büyük tipografi"
+      ],
+      "viewport": "Dev ARAL fotoğrafın sınırına oturur; yukarı taşan dikey detay ana kadraja karşı ölçek kurar.",
+      "risk": "Statik görsel dönüşümü kanıtlamaz; tipografi küçülmesi ve kadraj sürekliliği test edilmelidir.",
+      "comp": ".impeccable/mocks/decision/direction-d.png"
+    },
+    {
+      "id": "assigned",
+      "label": "A — Sergi Duvarı",
+      "lineage": "Mimarlık sergilerinin eser asım sistemi",
+      "thesis": "Projeler farklı ölçeklerde tek bir sergi yüzeyine yerleşir.",
+      "palette": [
+        "#F8F9F8",
+        "#171B1D",
+        "#B9C0BF"
+      ],
+      "materials": [
+        "Doğal mimari fotoğraf",
+        "Saf galeri zemini",
+        "Geniş grotesk"
+      ],
+      "viewport": "Büyük yatay eser, küçük dikey eser ve detay fotoğrafı; görünür proje bağlantıları.",
+      "risk": "Fotoğraf seti zayıfsa asimetri rastgele kolaja dönüşebilir.",
+      "comp": ".impeccable/mocks/decision/gallery.png"
+    },
+    {
+      "id": "model-pick",
+      "label": "B — Yaşayan Monograf",
+      "lineage": "Mimarlık yayınlarının editorial açılımları",
+      "thesis": "Projeler ve stüdyonun düşüncesi tek yayın ritminde birlikte okunur.",
+      "palette": [
+        "#EEEAE2",
+        "#292720",
+        "#984B35"
+      ],
+      "materials": [
+        "Sıcak yayın zemini",
+        "Masthead tipografisi",
+        "Ana fotoğraf / detay ilişkisi"
+      ],
+      "viewport": "Büyük masthead altında bir projenin fotoğraf açılımı ve devam eden okuma akışı.",
+      "risk": "Karakter yalnızca serif başlıkta kalırsa tanıdık bir dergi temasına dönüşür.",
+      "comp": ".impeccable/mocks/decision/monograph.png"
+    },
+    {
+      "id": "challenger-daylight",
+      "label": "C — Işık Eşiği",
+      "verdict": "competitive",
+      "lineage": "Mimari eşik ve günışığıyla mekân okuması",
+      "thesis": "Bir projeyi dış cepheden iç avluya üç bakışta keşfet.",
+      "palette": [
+        "#20231F",
+        "#EEECE5",
+        "#C5AC7A"
+      ],
+      "materials": [
+        "Gölge kömürü",
+        "Doğal ışıklı fotoğraf",
+        "Tek fotoğraf sahnesi"
+      ],
+      "viewport": "Büyük tek proje fotoğrafı; sakin navigasyon ve bir sonraki bakışın başlangıcı.",
+      "case": "Mekânı hissettirmede güçlü; hızlı çoklu proje keşfinde sergi yönü daha açık.",
+      "risk": "Uzun pinned scroll keşfi geciktirebilir; mobile doğal akış gerektirir.",
+      "comp": ".impeccable/mocks/decision/threshold.png"
+    }
+  ],
+  "reroll": false,
+  "canon": false,
+  "steer": true,
+  "buildPath": {
+    "value": "comp",
+    "toggle": false
+  }
+}
